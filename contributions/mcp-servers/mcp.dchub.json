@@ -159,7 +159,8 @@
     "Start keyless with the read tools search, rank_markets and analyze_site; they only read DC Hub data. execute_plan stays on Review because it runs a multi-step plan of other DC Hub tools server-side in one call, so Guard cannot gate each step.",
     "Keep claim_free_key, bind_email and recover_my_key on Review: they create, bind or email a key for your user.",
     "Keep save_site, save_to_shortlist and the set_*_alert, subscribe_digest and research_task tools on Review: they write to an account or start email.",
-    "register_standing_intent has two shapes; review each. The webhook kinds (new_deal_in_market, news_keyword, permitting_change) POST signed webhooks to a URL you give, so confirm the destination URL during review. kind=\"capacity\" files a standing Capacity Source requirement that DC Hub follows up by email, so confirm the requirement, the contact details and that your user accepts the capacity terms. delete_standing_intent is permanent.",
+    "register_standing_intent webhook kinds (new_deal_in_market, news_keyword, permitting_change) POST signed webhooks to a URL you give, so confirm the destination URL during review. delete_standing_intent is permanent.",
+    "register_standing_intent with kind=\"capacity\" files a standing Capacity Source requirement that DC Hub follows up by email, so confirm the requirement, the contact details and that your user accepts the capacity terms.",
     "Keep read_inbox on Review: it marks partner notes as read on first call, so a second session sees none.",
     "accept_capacity_terms and request_capacity_intro accept terms or contact a capacity provider for your user; only run them after your user agrees."
   ]
