@@ -42,7 +42,7 @@
     },
     {
       "name": "execute_plan",
-      "state": "inherit"
+      "state": "review"
     },
     {
       "name": "rank_markets",
@@ -152,7 +152,7 @@
     "https://github.com/azmartone67/dchub-mcp-server"
   ],
   "saferAlternatives": [
-    "Start keyless with the read tools search, execute_plan, rank_markets and analyze_site; they only read DC Hub data.",
+    "Start keyless with the read tools search, rank_markets and analyze_site; they only read DC Hub data. execute_plan stays on Review because it runs a multi-step plan of other DC Hub tools server-side in one call, so Guard cannot gate each step.",
     "Keep claim_free_key, bind_email and recover_my_key on Review: they create, bind or email a key for your user.",
     "Keep save_site, save_to_shortlist and the set_*_alert, subscribe_digest and research_task tools on Review: they write to an account or start email.",
     "register_standing_intent sends signed webhooks to a URL you give; confirm the URL during review. delete_standing_intent is permanent.",
